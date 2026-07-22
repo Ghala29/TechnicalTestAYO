@@ -1,5 +1,4 @@
 const { defineConfig } = require("cypress");
-require("dotenv").config();
 module.exports = defineConfig({
   projectId: 'dp56od',
   allowCypressEnv: false,
@@ -12,9 +11,6 @@ module.exports = defineConfig({
     viewportWidth: 1280,
     viewportHeight: 720, 
     setupNodeEvents(on, config) {
-       config.env.username = process.env.username;
-       config.env.password = process.env.password;
-       return config;
     },
   },
 });
