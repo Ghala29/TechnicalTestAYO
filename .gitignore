@@ -1,8 +1,8 @@
 Plaintext
-# Dependency modules (Sangat besar, tidak perlu di-upload)
+# Dependency modules 
 node_modules/
 
-# File Sensitif / Rahasia
+# File Sensitif
 .env
 .env.local
 *.pem
