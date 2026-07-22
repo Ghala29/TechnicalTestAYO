@@ -1,6 +1,6 @@
 # 🧪 Cypress Automated Testing - Technical Test AYO
 
-Project ini berisi skrip pengujian otomatis (*End-to-End Testing*) menggunakan **Cypress** untuk platform [AYO Indonesia](https://ayo.co.id/).
+Project ini berisi skrip pengujian otomatis (*Studi Kasus 1*) menggunakan **Cypress** untuk platform [AYO Indonesia](https://ayo.co.id/).
 
 ---
 
@@ -22,7 +22,7 @@ Buka Terminal / Command Prompt, lalu jalankan perintah:
 git clone [https://github.com/Ghala29/TechnicalTestAYO.git](https://github.com/Ghala29/TechnicalTestAYO.git)
 cd TechnicalTestAYO
 
-### 2. Kloning Repository
+### 2. Install Dependency
 npm install
 
 ### 3. Konfigurasi Environment Variables (cypress.env.json)
@@ -40,4 +40,4 @@ Mode 1:  UI Runner
 4. Klik pada file skenario tes yang ingin dijalankan (contoh: booking.cy.js).
 
 Mode 2: Headless Mode (CLI / Terminal)
-npx cypress run
+1. npx cypress run
