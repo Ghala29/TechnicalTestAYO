@@ -1,9 +1,6 @@
 Plaintext
 # Dependency modules 
 node_modules/
-cypress/fixtures/
-cypress/support/
-cypress/videos/
 
 # File Sensitif
 .env
