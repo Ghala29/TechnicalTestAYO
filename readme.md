@@ -36,7 +36,7 @@ npm install
 Mode 1:  UI Runner
 1. npx cypress open
 2. Pilih E2E Testing.
-3. Pilih Browser pilihanmu (misalnya Chrome atau Electron).
+3. Pilih Browser pilihanmu (misalnya Chrome, Electron atau Edge).
 4. Klik pada file skenario tes yang ingin dijalankan (contoh: booking.cy.js).
 
 Mode 2: Headless Mode (CLI / Terminal)
