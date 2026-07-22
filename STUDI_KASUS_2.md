@@ -18,8 +18,7 @@ Fitur **Sign Up** adalah pintu masuk utama pengguna. Pengujian UI secara mendala
 * **Temuan Defect:** Saat menginput password, sistem menampilkan teks error: `validation.password.symbol` dan `validation.password.mixed`.
 * **Dampak:** Membingungkan calon pengguna, karena pesan validasi tidak menjelaskan kriteria password yang belum terpenuhi.
 * **Ekspektasi:** Menampilkan pesan yang ramah pengguna, contoh: *"Kata sandi harus terdiri dari minimal 1 karakter simbol dan kombinasi huruf besar-kecil"*.
-![Defect Validation Sign Up](![alt text](image-1.png))
----
+![alt text](image-2.png)
 
 ### 2. Checkout & Produk Tambahan (Add-Ons)
 
