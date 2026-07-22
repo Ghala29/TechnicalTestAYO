@@ -1,0 +1,31 @@
+{
+  "name": "automationtest",
+  "version": "1.0.0",
+  "description": "TechnicalTest",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghala29/BelajarCypress.git"
+  },
+  "keywords": [
+    "cypress",
+    "kasiraja"
+  ],
+  "author": "Ghaka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ghala29/BelajarCypress/issues"
+  },
+  "homepage": "https://github.com/Ghala29/BelajarCypress#readme",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.5.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
