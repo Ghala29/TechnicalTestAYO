@@ -54,4 +54,4 @@ Pengujian pada sistem booking krusial karena **ditemukan bug critical berupa pot
 ## 📷 Lampiran (Defect Screenshots)
 
 ### Gambar 1.1: Validation Error pada Sign Up
-![Sign Up Defect](![alt text](image-2.png))
+![Sign Up Defect validation.password.symbol](image-2.png)
