@@ -28,7 +28,7 @@ npm install
 ### 3. Konfigurasi Environment Variables (cypress.env.json)
 
 {
-  "username": "email_atau_nomor_ponsel_kamu@gmail.com",
+  "username": "isi dengan email",
   "password": "password_akun_kamu"
 }
 
