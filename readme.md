@@ -4,7 +4,7 @@ Project ini berisi skrip pengujian otomatis (*Studi Kasus 1*) menggunakan **Cypr
 
 ---
 
-## 🛠️ Prasyarat (Prerequisites)
+## Prasyarat (Prerequisites)
 
 Sebelum menjalankan project ini, pastikan komputer kamu sudah terinstall software berikut:
 * **Node.js** (Versi 16 atau lebih baru) - [Download Node.js](https://nodejs.org/)
@@ -13,7 +13,7 @@ Sebelum menjalankan project ini, pastikan komputer kamu sudah terinstall softwar
 
 ---
 
-## 🚀 Langkah-Langkah Menjalankan Project
+## Langkah-Langkah Menjalankan Project
 
 Ikuti langkah-langkah di bawah ini untuk mengkloning dan menjalankan pengujian di komputer lokal kamu:
 
