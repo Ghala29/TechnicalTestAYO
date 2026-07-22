@@ -8,7 +8,7 @@ Project ini berisi skrip pengujian otomatis (*Studi Kasus 1*) menggunakan **Cypr
 Daftar lengkap *Test Case* & *Test Scenario* dapat diakses melalui dokumen Google Sheets berikut:
 **[Lihat Google Sheets - Test Scenarios AYO](https://docs.google.com/spreadsheets/d/1Z5VQGXfQdTaLoVjqXMgSf8e6iL2_2-Ncoi8n22EJfgE/edit?usp=sharing)**
 
-> **Catatan Strategi Pengujian:**
+> **Catatan Pengujian:**
 > * skenario pengujian (mulai dari pengujian positif, pencegahan *Double Booking* di UI/API, hingga validasi kesesuaian harga) tercakup pada **Google Sheets**.
 > * **Script Automation Cypress** difokuskan untuk menguji verifikasi harga dari checkout hingga total bayar.
 
