@@ -50,3 +50,21 @@ Ikuti langkah-langkah di bawah ini untuk mengkloning dan menjalankan pengujian d
 
 ### Mode 2: Headless Mode (CLI / Terminal)
 * npx cypress run
+
+## (Studi Kasus 2)
+
+Bagian ini berisi analisis singkat mengenai mekanisme pengujian platform AYO (Web & Mobile) berdasarkan **temuan bug** yang ditemukan selama pengujian.
+
+### Ringkasan Temuan Defect Utama (Web AYO):
+1. **Registrasi Akun (Sign Up) - Minor:** Tampilan pesan error validasi password masih berupa key translation (`validation.password.symbol`).
+2. **Checkout & Add-Ons - Major:** Nominal **Total Bayar reset menjadi 0** saat memilih opsi produk tambahan dalam kondisi user belum login.
+3. **Sistem Booking - Critical:** 
+   * **Double Booking:** User *guest* dapat memilih dan memasukkan slot jadwal yang sama ke dalam keranjang secara berulang.
+   * **Mass Deletion:** Menekan tombol hapus pada salah satu slot jadwal menyebabkan **seluruh slot pada tanggal/lapangan yang sama terhapus sekaligus**.
+
+### Pengujian Mobile App (Play Store & App Store):
+* **Fokus Utama:** Pengujian **Kompatibilitas Lintas Perangkat (Android & iOS)** untuk menangani potensi *layout glitch*, perbedaan perilaku OS, serta inkonsistensi fitur di berbagai spesifikasi smartphone.
+
+> **Dokumen Lengkap:**  
+> Rincian dampak, ekspektasi, dan bukti screenshot dapat diakses pada dokumen terpisah berikut:  
+> **[Lihat Dokumen Studi Kasus 2 (STUDI_KASUS_2.md)](https://github.com/Ghala29/TechnicalTestAYO/blob/main/STUDI_KASUS_2.md)**
