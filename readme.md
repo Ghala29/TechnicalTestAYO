@@ -1,4 +1,4 @@
-# 🧪 Cypress Automated Testing - Technical Test AYO
+# Cypress Automated Testing - Technical Test AYO
 
 Project ini berisi skrip pengujian otomatis (*Studi Kasus 1*) menggunakan **Cypress** untuk platform [AYO Indonesia](https://ayo.co.id/).
 
