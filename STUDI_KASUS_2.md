@@ -4,15 +4,51 @@
 
 ## 🌐 1. Pengujian Web AYO (https://ayo.co.id)
 
-### A. Fitur / Area Utama Pengujian:
-1. **Registrasi Akun Baru (Sign Up / Auth)**
+### 1. Registrasi Akun Baru (Sign Up)
 
-### B. Mekanisme Pengujian:
-* **UI Testing (Exploratory & UI Automation - Cypress)**
+#### A. Fitur / Area Pengujian:
+* **Fitur Registrasi Akun Baru (Sign Up / Auth Flow)**
 
-### C. Alasan Pengujian (Based on Real Defect Finding):
-Fitur **Sign Up** adalah pintu masuk utama pengguna. Pengujian UI secara mendalam pada alur ini sangat krusial dilakukan karena **ditemukan bug minor** saat pengujian eksploratif:
+#### B. Mekanisme Pengujian:
+* **UI Testing (Exploratory Testing)** & **UI Automation (Cypress)**
 
-* **Temuan Defect:** Saat menginput password tanpa simbol, sistem menampilkan teks error mentah: `validation.password.symbol`.
-* **Dampak:** Membingungkan calon pengguna.
-* **Ekspektasi:** Menampilkan pesan ramah pengguna, contoh: *"Password harus mengandung minimal 1 karakter simbol"*.
+#### C. Alasan Pengujian (Based on Real Defect Finding):
+Fitur **Sign Up** adalah pintu masuk utama pengguna. Pengujian UI secara mendalam pada alur ini krusial dilakukan karena **ditemukan bug minor** saat pengujian:
+
+* **Temuan Defect:** Saat menginput password, sistem menampilkan teks error: `validation.password.symbol` dan `validation.password.mixed`.
+* **Dampak:** Membingungkan calon pengguna, karena pesan validasi tidak menjelaskan kriteria password yang belum terpenuhi.
+* **Ekspektasi:** Menampilkan pesan yang ramah pengguna, contoh: *"Kata sandi harus terdiri dari minimal 1 karakter simbol dan kombinasi huruf besar-kecil"*.
+![Defect Validation Sign Up](![alt text](image-1.png))
+---
+
+### 2. Checkout & Produk Tambahan (Add-Ons)
+
+#### A. Fitur / Area Pengujian:
+* **Halaman Checkout & Opsi Produk Tambahan (Add-Ons Flow)**
+
+#### B. Mekanisme Pengujian:
+* **UI Testing (Exploratory Testing)** & **UI Automation (Cypress)**
+
+#### C. Alasan Pengujian (Based on Real Defect Finding):
+Pengujian pada halaman checkout/opsi produk tambahan krusial karena **ditemukan bug kalkulasi nilai pembayaran pada kondisi pengguna belum login (guest)**:
+
+* **Temuan Defect:** Pada halaman pilihan Produk Tambahan (Opsional), nominal **Total Bayar mendadak reset menjadi 0** saat field/dropdown tersebut diklik. Bug ini spesifik terjadi apabila pengguna melakukan booking tanpa/belum melakukan *login*.
+* **Dampak:** *Major Impact* pada alur transaksi. Mengakibatkan ketidaksesuaian data kalkulasi harga (*price mismatch*) serta membingungkan pengguna sebelum berpindah ke tahap pembayaran.
+* **Ekspektasi:** Total Bayar harus tetap mempertahankan akumulasi harga sewa lapangan dari alur sebelumnya (meskipun user belum login), dan baru bertambah jika pengguna memilih item produk tambahan.
+
+---
+
+### 3. Sistem Booking & Slot Lapangan (Double Booking Validation)
+
+#### A. Fitur / Area Pengujian:
+* **Fitur Pemilihan Slot & Keranjang Booking (Cart & Slot Selection)**
+
+#### B. Mekanisme Pengujian:
+* **UI Testing**, **UI Automation (Cypress)**, & **API Testing**
+
+#### C. Alasan Pengujian (Based on Real Defect Finding):
+Pengujian pada sistem booking krusial karena **ditemukan bug critical berupa potensi Double Booking pada kondisi pengguna belum login**:
+
+* **Temuan Defect:** Pengguna yang belum melakukan *login* dapat memilih dan menambahkan slot jadwal yang sama secara berulang ke dalam keranjang (*cart*), sehingga menghasilkan *double booking* untuk slot waktu yang identik.
+* **Dampak:** *Critical Impact*. Berpotensi merusak logika ketersediaan lapangan, menyebabkan konflik jadwal antar pengguna (*slot overlap*), serta kerugian operasional bagi pemilik venue.
+* **Ekspektasi:** Sistem harus memiliki validasi untuk menolak/mencegah penambahan slot jadwal yang sama ke dalam keranjang, atau mengarahkan user untuk *login* terlebih dahulu.
