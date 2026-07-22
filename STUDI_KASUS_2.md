@@ -78,11 +78,11 @@ Pengujian ini krusial dilakukan karena **terdapat potensi/riwayat defect yang se
 ## 📷 Lampiran (Defect Screenshots)
 
 ### Gambar 1.1: Validation Error pada Sign Up
-![Sign Up Defect validation.password.symbol](image-2.png)
-![Sign Up Defect validation.password.mixed](image-3.png)
+![Sign Up Defect validation.password.symbol](SignupDefect1.png)
+![Sign Up Defect validation.password.mixed](SignupDefect2.png)
 
 ### Gambar 1.2: Total Bayar Reset ke 0
-![Total Bayar Reset ke 0](image-5.png)
+![Total Bayar Reset ke 0](TotalBayarDefect.png)
 
 ### Gambar 1.3: Double Booking pada User Yang belum Login
-![Double Booking](image-4.png)
+![Double Booking](DoubleBookingDefect.png)
