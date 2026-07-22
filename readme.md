@@ -48,5 +48,5 @@ Ikuti langkah-langkah di bawah ini untuk mengkloning dan menjalankan pengujian d
 * Pilih Browser pilihanmu (misalnya Chrome, Electron atau Edge).
 * Klik pada file skenario tes yang ingin dijalankan (contoh: booking.cy.js).
 
-### 2: Headless Mode (CLI / Terminal)
+### Mode 2: Headless Mode (CLI / Terminal)
 * npx cypress run
