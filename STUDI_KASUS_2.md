@@ -18,7 +18,6 @@ Fitur **Sign Up** adalah pintu masuk utama pengguna. Pengujian UI secara mendala
 * **Temuan Defect:** Saat menginput password, sistem menampilkan teks error: `validation.password.symbol` dan `validation.password.mixed`.
 * **Dampak:** Membingungkan calon pengguna, karena pesan validasi tidak menjelaskan kriteria password yang belum terpenuhi.
 * **Ekspektasi:** Menampilkan pesan yang ramah pengguna, contoh: *"Kata sandi harus terdiri dari minimal 1 karakter simbol dan kombinasi huruf besar-kecil"*.
-![alt text](image-2.png)
 
 ### 2. Checkout & Produk Tambahan (Add-Ons)
 
@@ -51,3 +50,8 @@ Pengujian pada sistem booking krusial karena **ditemukan bug critical berupa pot
 * **Temuan Defect:** Pengguna yang belum melakukan *login* dapat memilih dan menambahkan slot jadwal yang sama secara berulang ke dalam keranjang (*cart*), sehingga menghasilkan *double booking* untuk slot waktu yang identik.
 * **Dampak:** *Critical Impact*. Berpotensi merusak logika ketersediaan lapangan, menyebabkan konflik jadwal antar pengguna (*slot overlap*), serta kerugian operasional bagi pemilik venue.
 * **Ekspektasi:** Sistem harus memiliki validasi untuk menolak/mencegah penambahan slot jadwal yang sama ke dalam keranjang, atau mengarahkan user untuk *login* terlebih dahulu.
+
+## 📷 Lampiran (Defect Screenshots)
+
+### Gambar 1.1: Validation Error pada Sign Up
+![Sign Up Defect](![alt text](image-2.png))
