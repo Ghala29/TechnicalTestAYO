@@ -19,6 +19,8 @@ Fitur **Sign Up** adalah pintu masuk utama pengguna. Pengujian UI secara mendala
 * **Dampak:** Membingungkan calon pengguna, karena pesan validasi tidak menjelaskan kriteria password yang belum terpenuhi.
 * **Ekspektasi:** Menampilkan pesan yang ramah pengguna, contoh: *"Kata sandi harus terdiri dari minimal 1 karakter simbol dan kombinasi huruf besar-kecil"*.
 
+---
+
 ### 2. Checkout & Produk Tambahan (Add-Ons)
 
 #### A. Fitur / Area Pengujian:
@@ -59,7 +61,7 @@ Pengujian pada sistem booking krusial dilakukan karena **ditemukan bug kritis te
    * **Dampak:** *Major Impact*. Mengganggu kenyamanan pengguna (*bad UX*) karena memaksa pengguna mengulang proses pemilihan jadwal dari awal jika hanya ingin membatalkan salah satu jam.
    * **Ekspektasi:** Tombol hapus hanya menghapus *spesifik slot* yang diklik oleh pengguna.
 
-## 📱 2. Pengujian Mobile App AYO (Play Store & App Store)
+## 2. Pengujian Mobile App AYO (Play Store & App Store)
 
 ### A. Fitur / Area Utama Pengujian:
 * **Kompatibilitas Lintas Perangkat (Android & iOS Device Compatibility)**
