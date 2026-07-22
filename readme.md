@@ -27,12 +27,12 @@ Sebelum menjalankan project ini, pastikan komputer kamu sudah terinstall softwar
 Ikuti langkah-langkah di bawah ini untuk mengkloning dan menjalankan pengujian di komputer lokal kamu:
 
 ### 1. Kloning Repository
-1. Buka Terminal / Command Prompt, lalu jalankan perintah:
-2. git clone [https://github.com/Ghala29/TechnicalTestAYO.git](https://github.com/Ghala29/TechnicalTestAYO.git)
-3. cd TechnicalTestAYO
+* Buka Terminal / Command Prompt, lalu jalankan perintah:
+* git clone [https://github.com/Ghala29/TechnicalTestAYO.git](https://github.com/Ghala29/TechnicalTestAYO.git)
+* cd TechnicalTestAYO
 
 ### 2. Install Dependency
-1. npm install
+* npm install
 
 ### 3. Konfigurasi Environment Variables (cypress.env.json)
 
@@ -42,11 +42,11 @@ Ikuti langkah-langkah di bawah ini untuk mengkloning dan menjalankan pengujian d
 }
 
 ## Cara Menjalankan Pengujian
-Mode 1:  UI Runner
-1. npx cypress open
-2. Pilih E2E Testing.
-3. Pilih Browser pilihanmu (misalnya Chrome, Electron atau Edge).
-4. Klik pada file skenario tes yang ingin dijalankan (contoh: booking.cy.js).
+### Mode 1:  UI Runner
+* npx cypress open
+* Pilih E2E Testing.
+* Pilih Browser pilihanmu (misalnya Chrome, Electron atau Edge).
+* Klik pada file skenario tes yang ingin dijalankan (contoh: booking.cy.js).
 
-Mode 2: Headless Mode (CLI / Terminal)
-1. npx cypress run
+### 2: Headless Mode (CLI / Terminal)
+* npx cypress run
