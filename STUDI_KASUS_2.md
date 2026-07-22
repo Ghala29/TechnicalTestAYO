@@ -1,8 +1,8 @@
-# 📝 Studi Kasus 2: Analisis & Strategi Pengujian Platform AYO
+# 📝 Studi Kasus 2
 
 ---
 
-## 🌐 1. Pengujian Web AYO (https://ayo.co.id)
+## 1. Pengujian Web AYO (https://ayo.co.id)
 
 ### 1. Registrasi Akun Baru (Sign Up)
 
@@ -36,7 +36,7 @@ Pengujian pada halaman checkout/opsi produk tambahan krusial karena **ditemukan 
 
 ---
 
-### 3. Sistem Booking & Slot Lapangan (Double Booking Validation)
+### 3. Sistem Booking & Pengelolaan Slot Keranjang (Booking Cart Validation)
 
 #### A. Fitur / Area Pengujian:
 * **Fitur Pemilihan Venue & Checkout (Cart & Slot Selection)**
@@ -45,14 +45,35 @@ Pengujian pada halaman checkout/opsi produk tambahan krusial karena **ditemukan 
 * **UI Testing**, **UI Automation (Cypress)**, & **API Testing**
 
 #### C. Alasan Pengujian (Based on Real Defect Finding):
-Pengujian pada sistem booking krusial karena **ditemukan bug critical berupa potensi Double Booking pada kondisi pengguna belum login**:
+Pengujian pada sistem booking krusial dilakukan karena **ditemukan bug kritis terkait validasi slot dan logika penghapusan keranjang**:
 
-* **Temuan Defect:** Pengguna yang belum melakukan *login* dapat memilih dan menambahkan slot jadwal yang sama secara berulang ke dalam keranjang (*cart*), sehingga menghasilkan *double booking*.
-* **Dampak:** *Critical Impact*. Berpotensi merusak logika ketersediaan lapangan, menyebabkan konflik jadwal antar pengguna.
-* **Ekspektasi:** 
-  * Frontend seharusnya memiliki validasi untuk menolak/mencegah penambahan slot jadwal yang sama ke dalam keranjang, atau mengarahkan pengguna untuk *login* terlebih dahulu.
-  * Validasi pada sisi **backend** juga harus menolak request double booking untuk memastikan *double booking* tidak terjadi pada basis data.
+1. **Bug Double Booking:**
+   * **Temuan Defect:** Pengguna yang belum melakukan *login* dapat memilih dan menambahkan slot jadwal yang sama secara berulang ke dalam keranjang (*cart*), sehingga menghasilkan *double booking*.
+   * **Dampak:** *Critical Impact*. Berpotensi merusak logika ketersediaan lapangan dan menyebabkan konflik jadwal antar pengguna.
+   * **Ekspektasi:** 
+     * Frontend seharusnya memiliki validasi untuk menolak/mencegah penambahan slot jadwal yang sama ke dalam keranjang, atau mengarahkan pengguna untuk *login* terlebih dahulu.
+     * Validasi pada sisi **backend** juga harus menolak request double booking untuk memastikan *double booking* tidak terjadi pada basis data.
 
+2. **Bug Hapus Slot Jadwal:**
+   * **Temuan Defect:** Saat pengguna memilih 2 slot pada tanggal/lapangan yang sama, menekan ikon tempat sampah (hapus) pada salah satu slot akan secara tidak sengaja **menghapus kedua slot sekaligus**.
+   * **Dampak:** *Major Impact*. Mengganggu kenyamanan pengguna (*bad UX*) karena memaksa pengguna mengulang proses pemilihan jadwal dari awal jika hanya ingin membatalkan salah satu jam.
+   * **Ekspektasi:** Tombol hapus hanya menghapus *spesifik slot* yang diklik oleh pengguna.
+
+## 📱 2. Pengujian Mobile App AYO (Play Store & App Store)
+
+### A. Fitur / Area Utama Pengujian:
+* **Kompatibilitas Lintas Perangkat (Android & iOS Device Compatibility)**
+* **Responsivitas Tampilan (Screen Resolution & Orientation)**
+### B. Mekanisme Pengujian:
+* **Real Device & Emulator Testing**
+* **Mobile Automation Testing (Appium)**
+* **Manual Exploratory Testing (Android & iOS)**
+
+### C. Alasan Pengujian:
+Pengujian ini krusial dilakukan karena **terdapat potensi/riwayat defect yang sering terjadi saat aplikasi dijalankan di perangkat yang berbeda**:
+
+* **Variasi OS & Ukuran Layar:** Memastikan UI dan fungsi fitur utama (seperti booking & checkout) berjalan konsisten, tidak terpotong (*overlapping UI*), serta responsif di berbagai merek smartphone Android dan seri iPhone.
+* **Variasi Spesifikasi Hardware:** Memastikan performa aplikasi tetap stabil dan tidak *crash*, baik di perangkat *flagship* maupun perangkat dengan spesifikasi menengah ke bawah (*low-end devices*).
 
 ## 📷 Lampiran (Defect Screenshots)
 
