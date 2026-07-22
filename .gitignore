@@ -1,8 +1,12 @@
 Plaintext
 # Dependency modules 
 node_modules/
+fixtures/
+support/
+videos/
 
 # File Sensitif
 .env
 .env.local
 *.pem
+
