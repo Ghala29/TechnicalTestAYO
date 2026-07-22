@@ -64,4 +64,4 @@ Pengujian pada sistem booking krusial karena **ditemukan bug critical berupa pot
 ![Total Bayar Reset ke 0](image-5.png)
 
 ### Gambar 1.3: Double Booking pada User Yang belum Login
-![Double Booking](image-1.png)
+![Double Booking](image-4.png)
