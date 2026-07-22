@@ -1,6 +1,6 @@
-# Cypress Automated Testing - Technical Test AYO
+# QUALITY ASSURANCE TECHNICAL TEST
 
-Project ini berisi skrip pengujian otomatis (*Studi Kasus 1*) menggunakan **Cypress** untuk platform [AYO Indonesia](https://ayo.co.id/).
+Project ini berisi skrip pengujian otomatis dan scenario test (*Studi Kasus 1*) menggunakan **Cypress** untuk platform [AYO Indonesia](https://ayo.co.id/).
 
 ---
 ## Skenario Pengujian
