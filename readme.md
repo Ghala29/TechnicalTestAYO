@@ -3,6 +3,8 @@
 Project ini berisi skrip pengujian otomatis (*Studi Kasus 1*) menggunakan **Cypress** untuk platform [AYO Indonesia](https://ayo.co.id/).
 
 ---
+## Skenario Pengujian
+
 Daftar lengkap *Test Case* & *Test Scenario* dapat diakses melalui dokumen Google Sheets berikut:
 **[Lihat Google Sheets - Test Scenarios AYO](https://docs.google.com/spreadsheets/d/1Z5VQGXfQdTaLoVjqXMgSf8e6iL2_2-Ncoi8n22EJfgE/edit?usp=sharing)**
 
