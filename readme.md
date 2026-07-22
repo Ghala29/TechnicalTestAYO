@@ -27,12 +27,12 @@ Sebelum menjalankan project ini, pastikan komputer kamu sudah terinstall softwar
 Ikuti langkah-langkah di bawah ini untuk mengkloning dan menjalankan pengujian di komputer lokal kamu:
 
 ### 1. Kloning Repository
-Buka Terminal / Command Prompt, lalu jalankan perintah:
-git clone [https://github.com/Ghala29/TechnicalTestAYO.git](https://github.com/Ghala29/TechnicalTestAYO.git)
-cd TechnicalTestAYO
+1. Buka Terminal / Command Prompt, lalu jalankan perintah:
+2. git clone [https://github.com/Ghala29/TechnicalTestAYO.git](https://github.com/Ghala29/TechnicalTestAYO.git)
+3. cd TechnicalTestAYO
 
 ### 2. Install Dependency
-npm install
+1. npm install
 
 ### 3. Konfigurasi Environment Variables (cypress.env.json)
 
